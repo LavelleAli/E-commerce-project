@@ -7,6 +7,9 @@
     margin: 0;
 }
 
+
+/* NAV BAR */
+
 nav{
     height: 80px;
     display: flex;
@@ -49,5 +52,9 @@ li {
 
 .nav__link:hover {
     text-decoration: underline;
-    
 }
+
+.nav__link--primary:hover{
+    text-decoration: none;
+}
+
