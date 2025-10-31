@@ -28,9 +28,6 @@ body {
 }
 
 
-
-
-
 /* NAV BAR */
 
 nav{
@@ -241,7 +238,63 @@ FEATURES
 
 */
 
-.features {
-    height: 1000px;
+#features {
+    padding-top: 8vw;
     background-color: rgba(86, 210, 98, 0.217);
 }
+
+.books {
+    display: flex;
+}
+.book {
+    width: 25%;
+    padding: 24px;
+}
+
+.book__img {
+    max-width: 380px;
+    transition: all 300ms ease;
+    cursor: no-drop;
+    padding: 0px;
+}
+
+.book__img--wrapper {
+    margin-bottom: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+}
+
+.book__img:hover {
+    transform: scale(1.03);
+    transition: all 500ms ease;
+}
+
+.book__title {
+    font-size: 20px;
+    margin-bottom: 8px;
+    text-align: center;
+    
+}
+
+.book__title:hover {
+    text-decoration: underline;
+    cursor: not-allowed;
+}
+
+.book__ratings {
+    margin-bottom: 8px;
+    color: #fabf2a;
+    text-align: center;
+}
+
+.book__price{ 
+    text-align: center;
+}
+
+.book__price--normal {
+    text-decoration:line-through;
+    padding: 6px;
+    color: #bfbfbf;
+}
+
