@@ -6,6 +6,7 @@
     <title>Library</title>
     <link rel="stylesheet" href="./E-commerce.css">
     <script src="https://kit.fontawesome.com/966c33780b.js" crossorigin="anonymous"></script>
+    <script src="E-commerce.js"></script>
 </head>
 <body>
     <section id="landing">
@@ -23,7 +24,28 @@
                         <a href="" class="nav__link nav__link--primary">Books</a>
                     </li>
                 </ul>
+             
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>    
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a href="#landing" class="menu__link" onclick="closeMenu()">Home</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link--nocursor" onclick="closeMenu()">Contact</a>
+                        </li>
+                    </ul>
             </div>
+        </div>       
         </nav>
         <header>
             <div class="header__container">
@@ -34,9 +56,11 @@
                     <h2>
                         Find your dream book with <span class="green">Library</span>
                     </h2>
-                    <button class="btn">
-                        Browse Books
-                    </button>
+                    <a href="#features">
+                        <button class="btn">
+                            Browse Books
+                        </button> 
+                    </a>
                 </div>
                 <figure class="header__img--wrapper">
                     <img src="./assets/Undraw_Books.svg" alt="">
@@ -46,7 +70,7 @@
     </section>
 
     <main>
-        
+
 <!--Section: Highlights-->
 
         <section class="highlights">
@@ -407,20 +431,60 @@
                                 59.95
                             </div>
                         </div>
-                    </div>    
-                        
-                    
-                    
-                    
-                    
-                    
-
-                    
-
-                    
+                    </div>      
                 </div>
             </div>
-
         </section>
+
+        <!--Section: Explore More Books-->
+
+        <section id="browse">
+            <div class="container">
+                <div class="explore__row row__column">
+                    <h2 class="explore__more">
+                        Explore more <span class="green">Books</span>
+                    </h2>
+                    <a href="#features">
+                        <button class="browse__books">
+                            Browse Books
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Section: Footer-->
+    <footer id="footer_section">
+        <div class="footer__container">
+            <div class="footer__row">
+                <a href="#">
+                    <figure class="footer__img--wrapper">
+                        <img class="footer__img" src="./assets/Library.svg" alt="">
+                    </figure>
+                </a>
+
+                <div class="footer__list">
+                    <a class="footer__links" href="">
+                        Home
+                    </a>
+                    <a class="footer__links--nocursor" href="">
+                        About
+                    </a>
+                    <a class="footer__links" href="">
+                        Books
+                    </a>
+                    <a class="footer__links--nocursor" href="">
+                        Contact
+                    </a>
+                </div>
+
+                <p class="footer__copyright">
+                    Copyright &copy 2025 Library
+                </p>
+
+            </div>
+        </div>
+    
+    </footer>
 </body>
 </html>
