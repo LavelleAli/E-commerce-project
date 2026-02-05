@@ -236,9 +236,17 @@
          <section id="recent">
             <div class="container">
                 <div class="row">
-                    <h2 class="section__title">
-                        Latest <span class="green">Books</span>
-                    </h2>
+                    <div class="books__header">
+                        <h2 class="section__title">
+                            Latest <span class="green">Books</span>
+                        </h2>
+                        <select name="" id="filter">
+                            <option value="" disabled selected>Sort</option>
+                            <option value="LOW_TO_HIGH" >Price: Low to High</option>
+                            <option value="HIGH_TO_LOW" >Price: High to Low</option>
+                            <option value="RATING" >Rating</option>
+                        </select>
+                    </div>
                     <div class="flex__wrap--test">
                         <div class="late__books">
                             <div class="book__img--wrapper">
